@@ -4,6 +4,8 @@ import { CalendarDays } from "lucide-react";
 
 import { Card, CardContent } from "@/components/ui/card";
 
+import { JobImages } from "@/components/JobImages";
+
 const jobs = [
     {
         role: "Senior Full-Stack Developer", // TODO: Replace with actual role
@@ -76,6 +78,12 @@ export const Experience = () => {
                                 </p>
                                 <p className="text-sm mt-2">{j.description}</p>
                                 {/* Job Images */}
+                                <JobImages 
+                                    role={j.role} 
+                                    link={j.link}
+                                    images={j.images} 
+                                    duration={j.duration} 
+                                />
                             </li>
                         ))}
                     </ul>
