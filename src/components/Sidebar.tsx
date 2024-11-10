@@ -1,18 +1,32 @@
 import Link from "next/link";
 import Image from "next/image";
 
+import { FaXTwitter } from "react-icons/fa6";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
+
 import {
     Card,
     CardContent
 } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 
-const social = [
+const socials = [
     {
         name: "Github",
         link: "https://github.com/achris-alonzo30",
-        icon: 
+        icon: <FaGithub />
+    },
+    {
+        name: "LinkedIn",
+        link: "https://linkedin.com/in/lonzochris",
+        icon: <FaLinkedin />
+    },
+    {
+        name: "X (Twitter)",
+        link: "https://x.com/lonz_chris",
+        icon: <FaXTwitter />
     }
+    // TODO: Add more socials here
 ]
 
 export const Sidebar = () => {
@@ -55,7 +69,24 @@ export const Sidebar = () => {
                         </Button>
                         {/* Social Links */}
                         <div className="mt-4 flex flex-col space-y-2 border-t border-border pt-4 w-full">
-
+                            {socials.map((s, i) => {
+                                const parts = s.link.split("/");
+                                const username = parts[parts.length - 1];
+                                return (
+                                    <Link
+                                        key={i}
+                                        href={s.link}
+                                        target="_blank"
+                                        aria-label={s.name}
+                                        className="cursor-pointer flex items-center gap-2 group"
+                                    >
+                                        {s.icon}
+                                        <p className="text-sm text-muted-foreground group-hover:text-primary transition-color duration-200 ease-linear">
+                                            /{username}
+                                        </p>
+                                    </Link>
+                                )
+                            })}
                         </div>
                     </div>
                 </CardContent>
