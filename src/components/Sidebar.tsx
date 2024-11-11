@@ -8,7 +8,7 @@ export const Sidebar = () => {
             {/* Profile Section */}
             < Profile />
             {/* Skills Section */}
-            {/* <Skills /> */}
+            <Skills />
         </aside>
     )
 }

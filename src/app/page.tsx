@@ -13,11 +13,11 @@ export default function Home() {
           {/* Main Section */}
           <main className="md:col-span-2">
             {/* About Me Section */}
-            {/* <AboutMe /> */}
+            <AboutMe />
             {/* Projects Section */}
-            {/* <Projects /> */}
+            <Projects />
             {/* Experience Section */}
-            {/* <Experience /> */}
+            <Experience />
           </main>
         </div>
       </div>
