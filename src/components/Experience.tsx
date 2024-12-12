@@ -13,9 +13,9 @@ const jobs = [
     logo: "/selise.png", // TODO: Replace with actual logo
     duration: "2021 - August 2024",
     description: [
-      "Led a web app and a mobile app team to success, guiding 5 junior developers to enhance their skills in full-stack and 2 developers in Flutter and stay current with emerging technologies.",
-      "Architected a highly scalable website that seamlessly accommodates over 500,000 monthly users with zero downtime.",
-      "Designed and launched a cutting-edge mobile app featuring QR scanning, real-time socket updates, and geo-based push notifications, achieving 30,000+ downloads in 30 days.",
+      "Engineered a scalable website handling 500,000+ monthly users, achieving 99.99% uptime and reducing server response time by 40% through optimized architecture.",
+      "Developed a mobile app with advanced features (QR scanning, real-time socket updates, geo-based notifications) that generated 30,000+ downloads within 30 days.",
+      "Led a cross-functional development team of 5 engineers, improving team productivity by 25% through mentorship and implementing agile methodologies.",
     ],
     link: "https://selisegroup.com/",
     images: ["/selise_ex.png"],
@@ -26,9 +26,9 @@ const jobs = [
     logo: "/crantech.svg", // TODO: Replace with actual logo
     duration: "2020 - 2021 April",
     description: [
-      "Engineered real estate and medical web applications, supporting over 70,000 live users, and improving client business performance by 24% through enhanced user experiences and scalability.",
-      "Designed a cross-platform audio meeting app that accelerated company communication by 10x, enabling real-time, seamless interactions across devices.",
-      "Constructed a social medical app for online doctor consultations, digital prescriptions appointment booking, and remote patient management.",
+      "Developed feature-rich web applications in real estate and medical sectors, supporting 70,000+ live users and increasing client business performance by 24%.",
+      "Created a cross-platform audio meeting app that improved internal communication efficiency by 10x, enabling seamless real-time interactions across multiple devices",
+      "Designed a comprehensive social medical app facilitating online doctor consultations, resulting in 5,000+ user registrations within the first three months.",
     ],
     link: "https://crantechllc.com/",
     images: ["/crantech_ex.png"],
