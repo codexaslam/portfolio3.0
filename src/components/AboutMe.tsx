@@ -8,12 +8,13 @@ export const AboutMe = () => {
       </CardHeader>
       <CardContent>
         <p className="text-muted-foreground">
-          Accomplished software engineer with 5+ years of experience
-          specializing in technologies such as React.js, Next.js, Flutter,
-          MongoDB, MySQL, Express.js, and Nest.js. Strong focus on functional
-          programming, performance optimization, and scalable design.
-          Experienced in cloud technologies like AWS, Docker, and Kubernetes for
-          deploying robust applications
+          Accomplished software engineer with 5+ years of expertise in frontend
+          technologies, specializing in creating scalable, high-performance web
+          and mobile applications. Strong focus on performance optimization, and
+          scalable design. Proven leadership in managing high-traffic platforms
+          handling over 500,000 monthly users and increasing business
+          performance by 24%. Experienced in cloud technologies like AWS,
+          Docker, and Kubernetes for deploying robust applications.
         </p>
       </CardContent>
     </Card>
