@@ -1,7 +1,7 @@
-import { Sidebar } from "@/components/Sidebar";
 import { AboutMe } from "@/components/AboutMe";
-import { Projects } from "@/components/Projects";
 import { Experience } from "@/components/Experience";
+import { Projects } from "@/components/Projects";
+import { Sidebar } from "@/components/Sidebar";
 
 export default function Home() {
   return (
@@ -14,10 +14,10 @@ export default function Home() {
           <main className="md:col-span-2">
             {/* About Me Section */}
             <AboutMe />
-            {/* Projects Section */}
-            <Projects />
             {/* Experience Section */}
             <Experience />
+            {/* Projects Section */}
+            <Projects />
           </main>
         </div>
       </div>

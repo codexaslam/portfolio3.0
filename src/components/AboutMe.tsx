@@ -1,22 +1,21 @@
-import {
-    Card,
-    CardTitle,
-    CardHeader,
-    CardContent
-} from "@/components/ui/card";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
-export const AboutMe = ( ) => {
-    return (
-        <Card className="mb-6">
-            <CardHeader>
-                <CardTitle>About Me</CardTitle>
-            </CardHeader>
-            <CardContent>
-                <p className="text-muted-foreground">
-                    {/* Write 1-2 sentences about yourself */}
-                    I am a software engineer with a passion for building scalable and efficient web applications.
-                </p>
-            </CardContent>
-        </Card>
-    )
-}
+export const AboutMe = () => {
+  return (
+    <Card className="mb-6">
+      <CardHeader>
+        <CardTitle>About Me</CardTitle>
+      </CardHeader>
+      <CardContent>
+        <p className="text-muted-foreground">
+          Accomplished software engineer with 5+ years of experience
+          specializing in technologies such as React.js, Next.js, Flutter,
+          MongoDB, MySQL, Express.js, and Nest.js. Strong focus on functional
+          programming, performance optimization, and scalable design.
+          Experienced in cloud technologies like AWS, Docker, and Kubernetes for
+          deploying robust applications
+        </p>
+      </CardContent>
+    </Card>
+  );
+};
