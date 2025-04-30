@@ -9,7 +9,7 @@ import { Card, CardContent } from "@/components/ui/card";
 const socials = [
   {
     name: "Github",
-    link: "https://github.com/engineer-aslam-hossain",
+    link: "https://github.com/codexaslam",
     icon: <FaGithub className="size-4" />,
   },
   {
