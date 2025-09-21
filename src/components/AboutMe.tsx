@@ -1,10 +1,15 @@
+import { User } from "lucide-react";
+
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 export const AboutMe = () => {
   return (
     <Card className="mb-6">
       <CardHeader>
-        <CardTitle>About Me</CardTitle>
+        <CardTitle className="flex items-center gap-2">
+          <User className="size-5" />
+          About Me
+        </CardTitle>
       </CardHeader>
       <CardContent>
         <p className="text-muted-foreground">
