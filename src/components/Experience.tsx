@@ -1,8 +1,8 @@
 import Image from "next/image";
 
-import { CalendarDays } from "lucide-react";
+import { Briefcase, CalendarDays } from "lucide-react";
 
-import { Card, CardContent } from "@/components/ui/card";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 import { JobImages } from "@/components/JobImages";
 
@@ -37,50 +37,53 @@ const jobs = [
 
 export const Experience = () => {
   return (
-    <>
-      <h2 className="text-xl font-bold mb-4">Work Experience</h2>
-      <Card>
-        <CardContent className="pt-6">
-          <ul className="space-y-8">
-            {jobs.map((j, i) => (
-              <li key={i} className="border-b last:border-b-0 pb-8 last:pb-0">
-                {/* Job Details */}
-                <div className="flex items-center space-x-4">
-                  <Image
-                    src={j.logo}
-                    alt={j.company}
-                    width={80}
-                    height={40}
-                    className="rounded-md object-cover"
-                  />
-                  <div>
-                    <h3 className="font-semibold">{j.role}</h3>
-                    <p className="text-sm text-muted-foreground">{j.company}</p>
-                  </div>
-                </div>
-                <p className="text-xs text-muted-foreground mt-2 flex items-center">
-                  <CalendarDays className="size-3 mr-2" />
-                  {j.duration}
-                </p>
-                <ul className="list-disc pl-5 space-y-2">
-                  {j.description?.map((line, indx) => (
-                    <li key={indx} className="!m-0">
-                      <p className="text-sm">{line}</p>
-                    </li>
-                  ))}
-                </ul>
-                {/* Job Images */}
-                <JobImages
-                  role={j.role}
-                  link={j.link}
-                  images={j.images}
-                  duration={j.duration}
+    <Card className="mb-6">
+      <CardHeader>
+        <CardTitle className="flex items-center gap-2">
+          <Briefcase className="size-5" />
+          Work Experience
+        </CardTitle>
+      </CardHeader>
+      <CardContent>
+        <ul className="space-y-8">
+          {jobs.map((j, i) => (
+            <li key={i} className="border-b last:border-b-0 pb-8 last:pb-0">
+              {/* Job Details */}
+              <div className="flex items-center space-x-4">
+                <Image
+                  src={j.logo}
+                  alt={j.company}
+                  width={80}
+                  height={40}
+                  className="rounded-md object-cover"
                 />
-              </li>
-            ))}
-          </ul>
-        </CardContent>
-      </Card>
-    </>
+                <div>
+                  <h3 className="font-semibold">{j.role}</h3>
+                  <p className="text-sm text-muted-foreground">{j.company}</p>
+                </div>
+              </div>
+              <p className="text-xs text-muted-foreground mt-2 flex items-center">
+                <CalendarDays className="size-3 mr-2" />
+                {j.duration}
+              </p>
+              <ul className="list-disc pl-5 space-y-2">
+                {j.description?.map((line, indx) => (
+                  <li key={indx} className="!m-0">
+                    <p className="text-sm">{line}</p>
+                  </li>
+                ))}
+              </ul>
+              {/* Job Images */}
+              <JobImages
+                role={j.role}
+                link={j.link}
+                images={j.images}
+                duration={j.duration}
+              />
+            </li>
+          ))}
+        </ul>
+      </CardContent>
+    </Card>
   );
 };
