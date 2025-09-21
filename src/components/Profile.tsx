@@ -14,7 +14,7 @@ const socials = [
   },
   {
     name: "LinkedIn",
-    link: "https://linkedin.com/in/aslamhossain-dev",
+    link: "https://linkedin.com/in/aslamhossain",
     icon: <FaLinkedin className="size-4" />,
   },
   {
@@ -35,7 +35,7 @@ export const Profile = () => {
               width={150}
               height={150}
               quality={100}
-              src="/profile.jpg"
+              src="/profile_img.jpg"
               alt="Profile Picture"
               className="w-full aspect-square rounded-full object-cover border-2"
             />
