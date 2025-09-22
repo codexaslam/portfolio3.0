@@ -1,4 +1,4 @@
-import { Award, CalendarDays, GraduationCap } from "lucide-react";
+import { CalendarDays, GraduationCap } from "lucide-react";
 
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
@@ -23,30 +23,6 @@ const education = {
     "Designed fault-tolerant data systems using Kafka and Kubernetes to meet industry demands for cloud-native scalability.",
   ],
 };
-
-const awards = [
-  {
-    title: "Winner and Best Business Potential",
-    event: "ICT ShowRoom 2025",
-    description:
-      "Winner and Best Business Potential out of 198 participants (34+ teams across Finland)",
-    year: "2025",
-  },
-  {
-    title: "Exceptional Leadership Award",
-    organization: "SELISE",
-    description:
-      "Recognized for leading critical projects, mentoring developers, and conducting technical sessions to enhance team capabilities.",
-    year: "2023",
-  },
-  {
-    title: "Outstanding Ownership Award",
-    organization: "SELISE",
-    description:
-      "Acknowledged for driving project success by taking full ownership, guiding the team, and ensuring seamless execution.",
-    year: "2022",
-  },
-];
 
 export const Education = () => {
   return (
@@ -95,36 +71,6 @@ export const Education = () => {
               </ul>
             </div>
           </div>
-        </CardContent>
-      </Card>
-
-      {/* Awards Section */}
-      <Card className="mb-6">
-        <CardHeader>
-          <CardTitle className="flex items-center gap-2">
-            <Award className="size-5" />
-            Awards & Recognition
-          </CardTitle>
-        </CardHeader>
-        <CardContent>
-          <ul className="space-y-6">
-            {awards.map((award, idx) => (
-              <li key={idx} className="border-b last:border-b-0 pb-4 last:pb-0">
-                <div className="flex items-start justify-between">
-                  <div className="flex-1">
-                    <h3 className="font-semibold">{award.title}</h3>
-                    <p className="text-sm text-muted-foreground">
-                      {award.event || award.organization}
-                    </p>
-                    <p className="text-sm mt-2">{award.description}</p>
-                  </div>
-                  <span className="text-xs text-muted-foreground bg-secondary px-2 py-1 rounded">
-                    {award.year}
-                  </span>
-                </div>
-              </li>
-            ))}
-          </ul>
         </CardContent>
       </Card>
     </>
